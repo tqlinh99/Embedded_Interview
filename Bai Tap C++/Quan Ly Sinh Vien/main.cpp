@@ -27,7 +27,7 @@ typedef enum{
 
 /*
  * Function: Class SinhVien
- * Description: The class contains all properties and methods of a student
+ * Description: The class contains all properties and methods of a student.
  * Input:
  *    None
  * Output:

@@ -1,6 +1,21 @@
+/*
+* File Name: main.cpp
+* Author: Quang Linh
+* Date: 24/05/2023
+* Description: This file create classes to contain properties of a date and some methods to do math with day
+*/
+
 #include <stdio.h>
 #include <stdint.h>
 
+/*
+ * Function: Class Date
+ * Description: The class contains properties of a date
+ * Input:
+ *    None
+ * Output:
+ *    None
+*/
 class Date{
     private:
         uint8_t Day;
@@ -13,10 +28,20 @@ class Date{
         uint8_t getDay();
         void setMonth(uint8_t m);
         uint8_t getMonth();
-        void setYear(uint8_t y);
+        void setYear(uint16_t y);
         uint16_t getYear();
 };
 
+/*
+* Function: Constructor Date
+* Description: import day, month and year of a date
+* Input:
+*    d: uint8_t
+*    m: uint8_t
+*    y: uint16_t
+* Output:
+*    None
+*/
 Date::Date(uint8_t d, uint8_t m, uint16_t y){
     while(((m < 1) & (m>12))||(d>daysInMonth(m,y))){
         printf("Error!!! %d/%d/%d khong ton tai!\n",d,m,y);
@@ -33,6 +58,15 @@ Date::Date(uint8_t d, uint8_t m, uint16_t y){
     Date::Year = y;
 }
 
+/*
+* Function: Date::daysInMonth()
+* Description: determine day number of a specific month depend on year
+* Input:
+*    m: uint8_t
+*    y: uint16_t
+* Output:
+*    return day number
+*/
 uint8_t Date::daysInMonth(uint8_t m, uint16_t y){
     switch(m)
     {
@@ -51,30 +85,85 @@ uint8_t Date::daysInMonth(uint8_t m, uint16_t y){
     }
 }
 
+/*
+ * Function: Date::setDay()
+ * Description: set day
+ * Input:
+ *    d: uint8_t
+ * Output:
+ *    none
+*/
 void Date::setDay(uint8_t d){
     Date::Day = d;
 }
 
+/*
+ * Function: Date::getDay()
+ * Description: used to get day
+ * Input:
+ *    none
+ * Output:
+ *    return day in type of uint8_t
+*/
 uint8_t Date::getDay(){
     return Date::Day;
 }
 
+/*
+ * Function: Date::setMonth()
+ * Description: set month
+ * Input:
+ *    m: uint8_t
+ * Output:
+ *    none
+*/
 void Date::setMonth(uint8_t m){
     Date::Month = m;
 }
 
+/*
+ * Function: Date::getMonth()
+ * Description: used to get month
+ * Input:
+ *    none
+ * Output:
+ *    return month in type of uint8_t
+*/
 uint8_t Date::getMonth(){
     return Date::Month;
 }
 
-void Date::setYear(uint8_t y){
+/*
+ * Function: Date::setYear()
+ * Description: set year
+ * Input:
+ *    y: uint16_t
+ * Output:
+ *    none
+*/
+void Date::setYear(uint16_t y){
     Date::Year = y;
 }
 
+/*
+ * Function: Date::getYear()
+ * Description: used to get year
+ * Input:
+ *    none
+ * Output:
+ *    return year in type of uint16_t
+*/
 uint16_t Date::getYear(){
     return Date::Year;
 }
 
+/*
+ * Function: Class dayMath
+ * Description: The class contains properties and methods to do math with 2 dates
+ *    None
+ * Output:
+ *    None
+*/
 class dayMath{
     private:
         Date A;
@@ -85,11 +174,28 @@ class dayMath{
         bool dayOffCheck();
 };
 
+/*
+* Function: Constructor dayMath
+* Description: import 2 dates to object belongs to class dayMath
+* Input:
+*    a: Date
+*    b: Date
+* Output:
+*    None
+*/
 dayMath::dayMath(Date a, Date b){
     dayMath::A = a;
     dayMath::B = b;
 }
 
+/*
+ * Function: dayMath::ageCalculator()
+ * Description: calculate number of year between 2 dates
+ * Input:
+ *    none
+ * Output:
+ *    return number of year in type of uint16_t
+*/
 uint16_t dayMath::ageCalculator(){
     if (A.getMonth()>B.getMonth()){
         return B.getYear()-A.getYear()-1;
@@ -104,6 +210,14 @@ uint16_t dayMath::ageCalculator(){
     }
 }
 
+/*
+ * Function: dayMath::dayOffCheck()
+ * Description: check if the entered is offday or not
+ * Input:
+ *    none
+ * Output:
+ *    return true or false in type of bool
+*/
 bool dayMath::dayOffCheck(){
     return true;
 }

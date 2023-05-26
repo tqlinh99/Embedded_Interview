@@ -13,7 +13,7 @@ using namespace std;
 
 /*
  * Function: Class Person
- * Description: The class contains all properties and methods of a point
+ * Description: The class contains all properties and methods of a person
  * Input:
  *    None
  * Output:
@@ -34,7 +34,7 @@ class Person{
 * Function: Constructor Person
 * Description: import input parameters for an object belong to class Person
 * Input:
-*    nam: string
+*    name: string
 *    birth: int16_t
 *    address: string
 * Output:
@@ -66,7 +66,7 @@ void Person::getInfo(){
  * Input:
  *    none
  * Output:
- *    none
+ *    return age of person in type of uint8_t
 */
 uint8_t Person::ageCalculator(){
     return 2023-Person::BIRTH;

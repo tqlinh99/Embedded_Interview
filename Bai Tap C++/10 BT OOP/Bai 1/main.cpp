@@ -128,7 +128,7 @@ PheptoanOXY::PheptoanOXY(Diem a, Diem b, Diem c){
  * Input:
  *    none
  * Output:
- *    none
+ *    display result
 */
 double PheptoanOXY::KhoangCach2Diem(){
     if (kiemTra == KhoangCach)
@@ -145,7 +145,7 @@ double PheptoanOXY::KhoangCach2Diem(){
  * Input:
  *    none
  * Output:
- *    none
+ *    display result
 */
 double PheptoanOXY::DienTichTamGiac(){
     if (kiemTra == DienTich)

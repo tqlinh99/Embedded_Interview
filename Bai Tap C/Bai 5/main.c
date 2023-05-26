@@ -1,5 +1,5 @@
 /*
-* File: Bai5.c
+* File: main.c
 * Author: Quang Linh
 * Date: 29/04/2023
 * Description: Tạo mảng ngẫu nhiên có 10000 phần tử, tìm 1 phần tử trong mảng.

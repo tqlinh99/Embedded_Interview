@@ -1,5 +1,5 @@
 /*
-* File: Bai1.c
+* File: main.c
 * Author: Quang Linh
 * Date: 29/04/2023
 * Description: Tạo mảng số nguyên ngẫu nhiên có kích thước tùy ý, đếm số lượng xuất hiện của các phần tử.

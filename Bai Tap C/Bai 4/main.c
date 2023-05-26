@@ -1,5 +1,5 @@
 /*
-* File: Bai4.c
+* File: main.c
 * Author: Quang Linh
 * Date: 29/04/2023
 * Description: Đọc 1 số nguyên bất kỳ từ dạng số qua dạng chữ (nhỏ hơn 4000000000)  .

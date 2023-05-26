@@ -1,5 +1,5 @@
 /*
-* File: Bai2.c
+* File: main.c
 * Author: Quang Linh
 * Date: 29/04/2023
 * Description: In chuỗi cho trước theo chiều ngược lại và tính số lần xuất hiện của các từ trong chuỗi.

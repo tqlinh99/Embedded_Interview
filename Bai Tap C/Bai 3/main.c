@@ -1,5 +1,5 @@
 /*
-* File: Bai3.c
+* File: main.c
 * Author: Quang Linh
 * Date: 29/04/2023
 * Description: Nhập ngày tháng năm và trả về kết quả thứ trong tuần.
