@@ -1,3 +1,10 @@
+/*
+* File Name: main.cpp
+* Author: Quang Linh
+* Date: 25/05/2023
+* Description: This program is made for managing student information by a function menu
+*/
+
 #include <stdio.h>
 #include <stdint.h>
 #include <cmath>
