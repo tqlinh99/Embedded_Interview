@@ -316,13 +316,49 @@ class OrderManagement{
         void OrderPay(int tableIndex);
     public:
 
-
+        /*
+        * Function: Constructor OrderManagement()
+        * Class: OrderManagement
+        * Description: declare number of elements for vector OrderDatabase corresponding to number of tables
+        * Input:
+        *    tableIndex: int   //The index of a table
+        * Output:
+        *    none
+        */
         OrderManagement(int numberOfTables);    
 
+/*
+        * Function: SelectTable()
+        * Class: OrderManagement
+        * Description: create a list of available tables and give choices to user to choose specific table to order
+        * Input:
+        *    tableIndex: int   //The index of a table
+        *    drinksDatabase : vector<Drinks>     //Database of available drinks
+        * Output:
+        *    none
+        */
         void SelectTable(vector<Drinks> drinksDatabase, int numberOfTables);
 };
 
+/*
+ * Class: Menu
+ * Description: A main menu for user to choose between 2 mode (drinks management and order management)
+ * Input:
+ *    None
+ * Output:
+ *    None
+*/
 class Menu{
      public:
+
+        /*
+        * Function: Constructor Menu()
+        * Class: Menu
+        * Description: create a menu with 2 choices (drinks management and order management) 
+        * Input:
+        *    none
+        * Output:
+        *    none
+        */
         Menu();    
 };
