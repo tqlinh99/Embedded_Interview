@@ -1,8 +1,5 @@
 #include "header.hpp"
 
-DrinksManagement::DrinksManagement(){
-} 
-
 void DrinksManagement::DrinksManagementMenu(){
     int phim = 6;
     
