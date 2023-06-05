@@ -1,3 +1,10 @@
+/*
+* File Name: OrderManagement.cpp
+* Author: Quang Linh
+* Date: 03/06/2023
+* Description: code all methods of class OrdersManagement
+*/
+
 #include "header.hpp"
 
 OrderManagement::OrderManagement(int numberOfTables){

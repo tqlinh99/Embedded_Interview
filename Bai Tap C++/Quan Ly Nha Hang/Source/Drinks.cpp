@@ -1,3 +1,10 @@
+/*
+* File Name: Drinks.cpp
+* Author: Quang Linh
+* Date: 03/06/2023
+* Description: code all methods of class Drinks
+*/
+
 #include "header.hpp"
 
 Drinks::Drinks(string name, uint16_t price){

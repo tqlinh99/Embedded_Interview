@@ -1,3 +1,10 @@
+/*
+* File Name: Menu.cpp
+* Author: Quang Linh
+* Date: 03/06/2023
+* Description: code constructor for class Menu
+*/
+
 #include "header.hpp"
 
 Menu::Menu(){
