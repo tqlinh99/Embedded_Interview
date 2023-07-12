@@ -250,13 +250,8 @@ int main(void)
 		if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12) == 0){
 			HAL_Delay(20);
 			if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12) == 0){
-				I2C_Software_Master_Receive(0x02);
-				for(uint8_t i = 0; RxBuffer[i] != '\0'; i++){
-					GPIOA->ODR = RxBuffer[i];
-					HAL_Delay(1000);
+				I2C_Software_Master_Transmit(0x02, "abcdef");
 			}
-		}
-		
 		}
 	}
 }

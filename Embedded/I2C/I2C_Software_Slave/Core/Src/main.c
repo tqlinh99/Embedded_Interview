@@ -241,7 +241,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		I2C_Software_Slave_Transmit("abcdef");
+		I2C_Software_Slave_Receive();
+		for(int i = 0; RxBuffer[i] != '\0'; i++){
+			GPIOA->ODR = RxBuffer[i];
+			HAL_Delay(1000);
+		} 
 		break;
   }
 }
