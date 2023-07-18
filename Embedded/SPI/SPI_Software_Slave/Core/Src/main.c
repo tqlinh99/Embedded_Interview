@@ -24,7 +24,6 @@
 #define MISO GPIO_PIN_5
 #define CS GPIO_PIN_6
 
-uint8_t data = 255;
 uint8_t RxBuffer;
 uint8_t TxBuffer = 0;
 uint8_t count = 0;
@@ -179,6 +178,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	
+	uint8_t data = 255;
+
   while (1)
   {
     /* USER CODE END WHILE */

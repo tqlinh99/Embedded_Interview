@@ -24,7 +24,6 @@
 #define MISO GPIO_PIN_5
 #define CS GPIO_PIN_6
 
-uint8_t data = 0;
 
 void SPI_Software_Master_init(){
 	HAL_GPIO_WritePin(GPIOB, MOSI, 0);
@@ -162,7 +161,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	
 	uint8_t data = 0;
+	
   while (1)
   {
     if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12) == 0){
